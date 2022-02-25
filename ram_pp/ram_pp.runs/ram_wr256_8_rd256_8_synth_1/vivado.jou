@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 23 19:15:02 2022
+# Process ID: 37992
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.runs/ram_wr256_8_rd256_8_synth_1
+# Command line: vivado.exe -log ram_wr256_8_rd256_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_wr256_8_rd256_8.tcl
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.runs/ram_wr256_8_rd256_8_synth_1/ram_wr256_8_rd256_8.vds
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.runs/ram_wr256_8_rd256_8_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ram_wr256_8_rd256_8.tcl -notrace

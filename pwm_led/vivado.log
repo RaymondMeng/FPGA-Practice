@@ -1,0 +1,550 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan 19 19:51:24 2022
+# Process ID: 38252
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent46716 C:\Users\Raymond_Meng\Documents\xlinx_FPGA\vivado_projects\pwm_led\pwm_led.xpr
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/vivado.log
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Data_Disk/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 738.168 ; gain = 82.621
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led.v
+update_compile_order -fileset sim_1
+set_property simulator_language Verilog [current_project]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pwm_led_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Data_Disk/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 07e9f15f91d2451ab94272d6bf29b32c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pwm_led_behav xil_defaultlib.pwm_led xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pwm_led
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pwm_led_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/xsim.dir/pwm_led_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 19 20:03:43 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 818.398 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pwm_led_behav -key {Behavioral:sim_1:Functional:pwm_led} -tclbatch {pwm_led.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source pwm_led.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pwm_led_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 824.680 ; gain = 6.281
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/constrs_1/new/top_io.xdc]
+Finished Parsing XDC File [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/constrs_1/new/top_io.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1114.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1287.344 ; gain = 462.664
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1298.480 ; gain = 11.137
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj pwm_led_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Data_Disk/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 07e9f15f91d2451ab94272d6bf29b32c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot pwm_led_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.pwm_led xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "pwm_led_time_synth.sdf", for root module "pwm_led".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "pwm_led_time_synth.sdf", for root module "pwm_led".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.pwm_led
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pwm_led_time_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/xsim.dir/pwm_led_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 19 20:05:32 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1677.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pwm_led_time_synth -key {Post-Synthesis:sim_1:Timing:pwm_led} -tclbatch {pwm_led.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source pwm_led.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pwm_led_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1692.270 ; gain = 867.590
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1699.121 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pwm_led_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Data_Disk/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 07e9f15f91d2451ab94272d6bf29b32c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pwm_led_behav xil_defaultlib.pwm_led xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pwm_led_behav -key {Behavioral:sim_1:Functional:pwm_led} -tclbatch {pwm_led.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source pwm_led.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pwm_led_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1699.121 ; gain = 0.000
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/pwm_led}} 
+run all
+run all
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led.v
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+add_files -norecurse C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Jan 20 15:33:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 20 15:34:29 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan 20 15:38:04 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2834.426 ; gain = 255.371
+set_property PROGRAM.FILE {C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/impl_1/pwm_led.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.runs/impl_1/pwm_led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pwm_led_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led_sim
+ERROR: [VRFC 10-2989] 'CHANG_TIME' is not declared [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v:36]
+ERROR: [VRFC 10-2865] module 'pwm_led_sim' ignored due to previous errors [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property simulator_language Mixed [current_project]
+run all
+run all
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pwm_led_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led_sim
+ERROR: [VRFC 10-2989] 'CHANG_TIME' is not declared [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v:36]
+ERROR: [VRFC 10-2865] module 'pwm_led_sim' ignored due to previous errors [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+run all
+run all
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/sim.v
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+add_files -norecurse C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led_sim.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led_sim.v
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v]
+update_compile_order -fileset sim_1
+set_property is_enabled true [get_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v]
+update_compile_order -fileset sim_1
+set_property target_simulator ModelSim [current_project]
+set_property top pwm_led_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+run all
+launch_simulation -install_path C:/modeltech64_10.7/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'C:/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'C:/Data_Disk/Xilinx/xilib/modelsim.ini' copied to run dir:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/modelsim'
+Reading C:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {pwm_led_sim_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:13:29 on Jan 20,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../pwm_led.srcs/sim_1/new/pwm_led_sim.v 
+# -- Compiling module pwm_led_sim
+# 
+# Top level modules:
+# 	pwm_led_sim
+# End time: 22:13:29 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:13:29 on Jan 20,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:13:30 on Jan 20,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2888.754 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/modelsim'
+Program launched (PID=74216)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2888.754 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led_sim.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sim_1/new/pwm_led_sim.v
+export_ip_user_files -of_objects  [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+add_files -norecurse C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project new C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new -part xc7z020clg400-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Data_Disk/Xilinx/Vivado/2018.3/data/ip'.
+add_files -norecurse C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.srcs/sources_1/new/pwm_led.v
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/constrs_1/new
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/constrs_1/new/top_io.xdc w ]
+add_files -fileset constrs_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/constrs_1/new/top_io.xdc
+set_property compxlib.modelsim_compiled_library_dir C:/Data_Disk/Xilinx/xilib [current_project]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path C:/modeltech64_10.7/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'C:/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'C:/Data_Disk/Xilinx/xilib/modelsim.ini' copied to run dir:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+Reading C:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {pwm_led_sim_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:24:39 on Jan 20,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v 
+# -- Compiling module pwm_led_sim
+# ** Error: ../../../../new.srcs/sim_1/new/sim.v(36): The expression for a parameter actual associated with the parameter name ('CHANGE_TIME') for the module instance ('inst_pwm_led_sim') must be constant.
+# End time: 22:24:39 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+# Error in macro ./pwm_led_sim_compile.do line 18
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:24:39 on Jan 20,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v 
+# -- Compiling module pwm_led_sim
+# ** Error: ../../../../new.srcs/sim_1/new/sim.v(36): The expression for a parameter actual associated with the parameter name ('CHANGE_TIME') for the module instance ('inst_pwm_led_sim') must be constant.
+# End time: 22:24:39 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+#     while executing
+# "exec <nul: {C:\modeltech64_10.7\win64\vlog.EXE} -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "C:\\modeltech64_10.7\\win64\\vlog -64 -incr -work xil_defaultlib  \
+# "../../../../new.srcs/sim_1/new/sim.v" \
+# "
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:04:24 . Memory (MB): peak = 2889.859 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:04:24 . Memory (MB): peak = 2889.859 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path C:/modeltech64_10.7/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'C:/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'C:/Data_Disk/Xilinx/xilib/modelsim.ini' copied to run dir:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/modelsim'
+Reading C:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {pwm_led_sim_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:29:11 on Jan 20,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v 
+# -- Compiling module pwm_led_sim
+# ** Error: ../../../../new.srcs/sim_1/new/sim.v(36): The expression for a parameter actual associated with the parameter name ('CHANGE_TIME') for the module instance ('inst_pwm_led_sim') must be constant.
+# End time: 22:29:11 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+# Error in macro ./pwm_led_sim_compile.do line 18
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:29:11 on Jan 20,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v 
+# -- Compiling module pwm_led_sim
+# ** Error: ../../../../new.srcs/sim_1/new/sim.v(36): The expression for a parameter actual associated with the parameter name ('CHANGE_TIME') for the module instance ('inst_pwm_led_sim') must be constant.
+# End time: 22:29:11 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+#     while executing
+# "exec <nul: {C:\modeltech64_10.7\win64\vlog.EXE} -64 -incr -work xil_defaultlib ../../../../new.srcs/sim_1/new/sim.v"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "C:\\modeltech64_10.7\\win64\\vlog -64 -incr -work xil_defaultlib  \
+# "../../../../new.srcs/sim_1/new/sim.v" \
+# "
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:03:22 . Memory (MB): peak = 2889.859 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:03:22 . Memory (MB): peak = 2889.859 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property target_simulator XSim [current_project]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pwm_led_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pwm_led_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led_sim
+ERROR: [VRFC 10-2989] 'CHANG_TIME' is not declared [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v:36]
+ERROR: [VRFC 10-2865] module 'pwm_led_sim' ignored due to previous errors [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 20 22:33:45 2022...

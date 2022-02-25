@@ -1,0 +1,10 @@
+X = linspace(0, 4*pi, 1024);
+Y = sawtooth(pi * (X + 0.5), 0.5);
+%Y = uint16(Y);
+%Y = (799 / 2) * (sign(Y) + 1);
+Y = (Y + 1) * (255 / 2); 
+Y = uint16(Y);
+plot(X, Y);
+fid0 = fopen('C:\Xilinx\vivado_project\adda_hdmi_final\matlab\actangle1920_1080.txt', 'wt');
+fprintf(fid0, '%02x,\n', Y);
+fid0 = fclose(fid0);

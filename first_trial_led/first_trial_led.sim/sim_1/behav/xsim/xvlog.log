@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led/first_trial_led.srcs/sources_1/new/led_toggle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_toggle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led/first_trial_led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

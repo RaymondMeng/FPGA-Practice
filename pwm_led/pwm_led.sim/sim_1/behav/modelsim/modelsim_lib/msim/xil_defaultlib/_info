@@ -1,0 +1,62 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/behav/modelsim
+T_opt
+!s110 1642688039
+VzzWkQTYQQof_b`gfzhZm61
+04 11 4 work pwm_led_sim fast 0
+04 4 4 work glbl fast 0
+=1-00e04c681619-61e96e25-22e-14990
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7;67
+vglbl
+!s110 1642688010
+!i10b 1
+!s100 7cd<?T0KPANS9PBoRj:BY2
+INdU5f[;Bb^Y=SUnL>A9=o3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1544155481
+8glbl.v
+Fglbl.v
+L0 6
+Z3 OL;L;10.7;67
+r1
+!s85 0
+31
+Z4 !s108 1642688009.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z5 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpwm_led_sim
+!s110 1642688009
+!i10b 1
+!s100 CzSK_?>8j>=Gfa^diaP:i1
+IPcEE7eE;3bc6fAT81LGmn1
+R2
+R0
+w1642686675
+8../../../../pwm_led.srcs/sim_1/new/pwm_led_sim.v
+F../../../../pwm_led.srcs/sim_1/new/pwm_led_sim.v
+L0 23
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../../../../pwm_led.srcs/sim_1/new/pwm_led_sim.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../pwm_led.srcs/sim_1/new/pwm_led_sim.v|
+!i113 0
+R5
+R1

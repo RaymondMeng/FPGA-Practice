@@ -1,0 +1,1505 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jan 31 22:51:07 2022
+| Host         : LAPTOP-M107SEOD running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file hdmi_trans_top_timing_summary_routed.rpt -pb hdmi_trans_top_timing_summary_routed.pb -rpx hdmi_trans_top_timing_summary_routed.rpx -warn_on_violation
+| Design       : hdmi_trans_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 5 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.862        0.000                      0                  997        0.174        0.000                      0                  997       -0.245       -1.234                       9                   356  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock             Waveform(ns)         Period(ns)      Frequency(MHz)
+-----             ------------         ----------      --------------
+clk               {0.000 10.000}       20.000          50.000          
+  clk_out1_clock  {0.000 3.368}        6.737           148.438         
+  clk_out2_clock  {0.000 0.674}        1.347           742.188         
+  clkfbout_clock  {0.000 40.000}       80.000          12.500          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                 WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                 -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                                                                                                                                                                 7.000        0.000                       0                     1  
+  clk_out1_clock        0.862        0.000                      0                  997        0.174        0.000                      0                  997        2.868        0.000                       0                   342  
+  clk_out2_clock                                                                                                                                                   -0.245       -1.234                       9                    10  
+  clkfbout_clock                                                                                                                                                   20.000        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         20.000      18.751     MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       20.000      80.000     MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clock
+  To Clock:  clk_out1_clock
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.862ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.174ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        2.868ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.862ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.831ns  (logic 0.433ns (8.962%)  route 4.398ns (91.037%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.340ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.105ns = ( 5.632 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.443ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.663    -0.443    inst_rd_image/CLK
+    SLICE_X92Y119        FDRE                                         r  inst_rd_image/rd_addr_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y119        FDRE (Prop_fdre_C_Q)         0.433    -0.010 r  inst_rd_image/rd_addr_reg[11]/Q
+                         net (fo=46, routed)          4.398     4.388    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/addra[11]
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.311     5.632    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/clka
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.954    
+                         clock uncertainty           -0.214     5.740    
+    RAMB36_X3Y12         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.490     5.250    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.250    
+                         arrival time                          -4.388    
+  -------------------------------------------------------------------
+                         slack                                  0.862    
+
+Slack (MET) :             1.039ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.657ns  (logic 0.433ns (9.297%)  route 4.224ns (90.703%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.337ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.101ns = ( 5.636 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.442ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.664    -0.442    inst_rd_image/CLK
+    SLICE_X92Y118        FDRE                                         r  inst_rd_image/rd_addr_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y118        FDRE (Prop_fdre_C_Q)         0.433    -0.009 r  inst_rd_image/rd_addr_reg[7]/Q
+                         net (fo=46, routed)          4.224     4.215    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[7]
+    RAMB36_X3Y11         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.315     5.636    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/clka
+    RAMB36_X3Y11         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.958    
+                         clock uncertainty           -0.214     5.744    
+    RAMB36_X3Y11         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[10])
+                                                     -0.490     5.254    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.254    
+                         arrival time                          -4.215    
+  -------------------------------------------------------------------
+                         slack                                  1.039    
+
+Slack (MET) :             1.058ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.509ns  (logic 0.398ns (8.828%)  route 4.111ns (91.172%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.337ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.101ns = ( 5.636 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.442ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.664    -0.442    inst_rd_image/CLK
+    SLICE_X92Y118        FDRE                                         r  inst_rd_image/rd_addr_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y118        FDRE (Prop_fdre_C_Q)         0.398    -0.044 r  inst_rd_image/rd_addr_reg[8]/Q
+                         net (fo=46, routed)          4.111     4.066    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[8]
+    RAMB36_X3Y11         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.315     5.636    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/clka
+    RAMB36_X3Y11         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.958    
+                         clock uncertainty           -0.214     5.744    
+    RAMB36_X3Y11         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.620     5.124    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.124    
+                         arrival time                          -4.066    
+  -------------------------------------------------------------------
+                         slack                                  1.058    
+
+Slack (MET) :             1.067ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.699ns  (logic 0.433ns (9.214%)  route 4.266ns (90.786%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.267ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.020ns = ( 5.716 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.443ns
+    Clock Pessimism Removal (CPR):    0.310ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.663    -0.443    inst_rd_image/CLK
+    SLICE_X92Y119        FDRE                                         r  inst_rd_image/rd_addr_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y119        FDRE (Prop_fdre_C_Q)         0.433    -0.010 r  inst_rd_image/rd_addr_reg[11]/Q
+                         net (fo=46, routed)          4.266     4.256    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/addra[11]
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.396     5.716    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/clka
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.310     6.026    
+                         clock uncertainty           -0.214     5.813    
+    RAMB36_X4Y9          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.490     5.323    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.323    
+                         arrival time                          -4.256    
+  -------------------------------------------------------------------
+                         slack                                  1.067    
+
+Slack (MET) :             1.073ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.619ns  (logic 0.433ns (9.374%)  route 4.186ns (90.626%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.341ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.105ns = ( 5.632 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.442ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.664    -0.442    inst_rd_image/CLK
+    SLICE_X94Y119        FDRE                                         r  inst_rd_image/rd_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X94Y119        FDRE (Prop_fdre_C_Q)         0.433    -0.009 r  inst_rd_image/rd_addr_reg[0]/Q
+                         net (fo=47, routed)          4.186     4.177    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/addra[0]
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.311     5.632    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/clka
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.954    
+                         clock uncertainty           -0.214     5.740    
+    RAMB36_X3Y12         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[3])
+                                                     -0.490     5.250    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.250    
+                         arrival time                          -4.177    
+  -------------------------------------------------------------------
+                         slack                                  1.073    
+
+Slack (MET) :             1.094ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.671ns  (logic 0.433ns (9.271%)  route 4.238ns (90.729%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.269ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.020ns = ( 5.716 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.441ns
+    Clock Pessimism Removal (CPR):    0.310ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.665    -0.441    inst_rd_image/CLK
+    SLICE_X92Y117        FDRE                                         r  inst_rd_image/rd_addr_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y117        FDRE (Prop_fdre_C_Q)         0.433    -0.008 r  inst_rd_image/rd_addr_reg[1]/Q
+                         net (fo=46, routed)          4.238     4.229    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/addra[1]
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.396     5.716    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/clka
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.310     6.026    
+                         clock uncertainty           -0.214     5.813    
+    RAMB36_X4Y9          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.490     5.323    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.323    
+                         arrival time                          -4.229    
+  -------------------------------------------------------------------
+                         slack                                  1.094    
+
+Slack (MET) :             1.115ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.522ns  (logic 0.398ns (8.801%)  route 4.124ns (91.199%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.269ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.020ns = ( 5.716 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.441ns
+    Clock Pessimism Removal (CPR):    0.310ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.665    -0.441    inst_rd_image/CLK
+    SLICE_X92Y117        FDRE                                         r  inst_rd_image/rd_addr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y117        FDRE (Prop_fdre_C_Q)         0.398    -0.043 r  inst_rd_image/rd_addr_reg[2]/Q
+                         net (fo=46, routed)          4.124     4.081    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/addra[2]
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.396     5.716    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/clka
+    RAMB36_X4Y9          RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.310     6.026    
+                         clock uncertainty           -0.214     5.813    
+    RAMB36_X4Y9          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.617     5.196    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.196    
+                         arrival time                          -4.081    
+  -------------------------------------------------------------------
+                         slack                                  1.115    
+
+Slack (MET) :             1.130ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.430ns  (logic 0.398ns (8.984%)  route 4.032ns (91.016%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.346ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.109ns = ( 5.628 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.441ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.665    -0.441    inst_rd_image/CLK
+    SLICE_X92Y117        FDRE                                         r  inst_rd_image/rd_addr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y117        FDRE (Prop_fdre_C_Q)         0.398    -0.043 r  inst_rd_image/rd_addr_reg[2]/Q
+                         net (fo=46, routed)          4.032     3.989    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/addra[2]
+    RAMB36_X3Y13         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.307     5.628    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/clka
+    RAMB36_X3Y13         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.950    
+                         clock uncertainty           -0.214     5.736    
+    RAMB36_X3Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.617     5.119    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.119    
+                         arrival time                          -3.989    
+  -------------------------------------------------------------------
+                         slack                                  1.130    
+
+Slack (MET) :             1.144ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[9]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.422ns  (logic 0.398ns (9.001%)  route 4.024ns (90.999%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.341ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.105ns = ( 5.632 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.442ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.664    -0.442    inst_rd_image/CLK
+    SLICE_X92Y118        FDRE                                         r  inst_rd_image/rd_addr_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y118        FDRE (Prop_fdre_C_Q)         0.398    -0.044 r  inst_rd_image/rd_addr_reg[6]/Q
+                         net (fo=46, routed)          4.024     3.980    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/addra[6]
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.311     5.632    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/clka
+    RAMB36_X3Y12         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.954    
+                         clock uncertainty           -0.214     5.740    
+    RAMB36_X3Y12         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[9])
+                                                     -0.617     5.123    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.123    
+                         arrival time                          -3.980    
+  -------------------------------------------------------------------
+                         slack                                  1.144    
+
+Slack (MET) :             1.151ns  (required time - arrival time)
+  Source:                 inst_rd_image/rd_addr_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.737ns  (clk_out1_clock rise@6.737ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        4.538ns  (logic 0.433ns (9.541%)  route 4.105ns (90.459%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.344ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.109ns = ( 5.628 - 6.737 ) 
+    Source Clock Delay      (SCD):    -0.443ns
+    Clock Pessimism Removal (CPR):    0.322ns
+  Clock Uncertainty:      0.214ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.421ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.382     1.382 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.110     2.492    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -4.075 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.191    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085    -2.106 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.663    -0.443    inst_rd_image/CLK
+    SLICE_X92Y119        FDRE                                         r  inst_rd_image/rd_addr_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y119        FDRE (Prop_fdre_C_Q)         0.433    -0.010 r  inst_rd_image/rd_addr_reg[11]/Q
+                         net (fo=46, routed)          4.105     4.095    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/addra[11]
+    RAMB36_X3Y13         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      6.737     6.737 r  
+    H16                                               0.000     6.737 r  clk (IN)
+                         net (fo=0)                   0.000     6.737    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         1.316     8.053 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     9.057    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527     2.529 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     4.244    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     4.321 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         1.307     5.628    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/clka
+    RAMB36_X3Y13         RAMB36E1                                     r  inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.322     5.950    
+                         clock uncertainty           -0.214     5.736    
+    RAMB36_X3Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.490     5.246    inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          5.246    
+                         arrival time                          -4.095    
+  -------------------------------------------------------------------
+                         slack                                  1.151    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.174ns  (arrival time - required time)
+  Source:                 inst_vga_shift/vpg_de_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_r/de_q_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.930%)  route 0.116ns (45.070%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.757ns
+    Source Clock Delay      (SCD):    -0.520ns
+    Clock Pessimism Removal (CPR):    -0.250ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.711    -0.520    inst_vga_shift/CLK
+    SLICE_X106Y117       FDRE                                         r  inst_vga_shift/vpg_de_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X106Y117       FDRE (Prop_fdre_C_Q)         0.141    -0.379 r  inst_vga_shift/vpg_de_reg/Q
+                         net (fo=1, routed)           0.116    -0.263    inst_hdmi_trans/inst_encode_chn_r/de
+    SLICE_X107Y117       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/de_q_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.983    -0.757    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X107Y117       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/de_q_reg/C
+                         clock pessimism              0.250    -0.507    
+    SLICE_X107Y117       FDRE (Hold_fdre_C_D)         0.070    -0.437    inst_hdmi_trans/inst_encode_chn_r/de_q_reg
+  -------------------------------------------------------------------
+                         required time                          0.437    
+                         arrival time                          -0.263    
+  -------------------------------------------------------------------
+                         slack                                  0.174    
+
+Slack (MET) :             0.186ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_r/dout_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.290ns  (logic 0.209ns (71.958%)  route 0.081ns (28.042%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.750ns
+    Source Clock Delay      (SCD):    -0.516ns
+    Clock Pessimism Removal (CPR):    -0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.715    -0.516    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X112Y112       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y112       FDRE (Prop_fdre_C_Q)         0.164    -0.352 r  inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[4]/Q
+                         net (fo=1, routed)           0.081    -0.271    inst_hdmi_trans/inst_encode_chn_r/q_m_reg[4]
+    SLICE_X113Y112       LUT5 (Prop_lut5_I4_O)        0.045    -0.226 r  inst_hdmi_trans/inst_encode_chn_r/dout[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.226    inst_hdmi_trans/inst_encode_chn_r/dout[4]
+    SLICE_X113Y112       FDCE                                         r  inst_hdmi_trans/inst_encode_chn_r/dout_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.990    -0.750    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X113Y112       FDCE                                         r  inst_hdmi_trans/inst_encode_chn_r/dout_reg[4]/C
+                         clock pessimism              0.247    -0.503    
+    SLICE_X113Y112       FDCE (Hold_fdce_C_D)         0.091    -0.412    inst_hdmi_trans/inst_encode_chn_r/dout_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.412    
+                         arrival time                          -0.226    
+  -------------------------------------------------------------------
+                         slack                                  0.186    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_r/n1d_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.293ns  (logic 0.186ns (63.499%)  route 0.107ns (36.501%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.751ns
+    Source Clock Delay      (SCD):    -0.516ns
+    Clock Pessimism Removal (CPR):    -0.248ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.715    -0.516    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X106Y110       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/n1d_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X106Y110       FDRE (Prop_fdre_C_Q)         0.141    -0.375 r  inst_hdmi_trans/inst_encode_chn_r/n1d_reg[1]/Q
+                         net (fo=4, routed)           0.107    -0.268    inst_hdmi_trans/inst_encode_chn_r/n1d[1]
+    SLICE_X107Y110       LUT6 (Prop_lut6_I2_O)        0.045    -0.223 r  inst_hdmi_trans/inst_encode_chn_r/q_m_reg[1]_i_1/O
+                         net (fo=1, routed)           0.000    -0.223    inst_hdmi_trans/inst_encode_chn_r/q_m_1
+    SLICE_X107Y110       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.989    -0.751    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X107Y110       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[1]/C
+                         clock pessimism              0.248    -0.503    
+    SLICE_X107Y110       FDRE (Hold_fdre_C_D)         0.091    -0.412    inst_hdmi_trans/inst_encode_chn_r/q_m_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.412    
+                         arrival time                          -0.223    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.200ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_g/n1d_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.335ns  (logic 0.186ns (55.478%)  route 0.149ns (44.522%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.755ns
+    Source Clock Delay      (SCD):    -0.518ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.713    -0.518    inst_hdmi_trans/inst_encode_chn_g/CLK
+    SLICE_X107Y114       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/n1d_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X107Y114       FDRE (Prop_fdre_C_Q)         0.141    -0.377 r  inst_hdmi_trans/inst_encode_chn_g/n1d_reg[0]/Q
+                         net (fo=4, routed)           0.149    -0.228    inst_hdmi_trans/inst_encode_chn_g/n1d[0]
+    SLICE_X108Y115       LUT6 (Prop_lut6_I1_O)        0.045    -0.183 r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg[1]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.183    inst_hdmi_trans/inst_encode_chn_g/q_m_1
+    SLICE_X108Y115       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.985    -0.755    inst_hdmi_trans/inst_encode_chn_g/CLK
+    SLICE_X108Y115       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[1]/C
+                         clock pessimism              0.251    -0.504    
+    SLICE_X108Y115       FDRE (Hold_fdre_C_D)         0.121    -0.383    inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.383    
+                         arrival time                          -0.183    
+  -------------------------------------------------------------------
+                         slack                                  0.200    
+
+Slack (MET) :             0.210ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_r/de_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_r/de_reg_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.315ns  (logic 0.141ns (44.778%)  route 0.174ns (55.222%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.756ns
+    Source Clock Delay      (SCD):    -0.520ns
+    Clock Pessimism Removal (CPR):    -0.271ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.711    -0.520    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X107Y117       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/de_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X107Y117       FDRE (Prop_fdre_C_Q)         0.141    -0.379 r  inst_hdmi_trans/inst_encode_chn_r/de_q_reg/Q
+                         net (fo=1, routed)           0.174    -0.205    inst_hdmi_trans/inst_encode_chn_r/de_q
+    SLICE_X111Y119       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/de_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.984    -0.756    inst_hdmi_trans/inst_encode_chn_r/CLK
+    SLICE_X111Y119       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_r/de_reg_reg/C
+                         clock pessimism              0.271    -0.485    
+    SLICE_X111Y119       FDRE (Hold_fdre_C_D)         0.070    -0.415    inst_hdmi_trans/inst_encode_chn_r/de_reg_reg
+  -------------------------------------------------------------------
+                         required time                          0.415    
+                         arrival time                          -0.205    
+  -------------------------------------------------------------------
+                         slack                                  0.210    
+
+Slack (MET) :             0.220ns  (arrival time - required time)
+  Source:                 cnt_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            cnt_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.312ns  (logic 0.227ns (72.798%)  route 0.085ns (27.202%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.747ns
+    Source Clock Delay      (SCD):    -0.514ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.717    -0.514    clk1x
+    SLICE_X110Y107       FDRE                                         r  cnt_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y107       FDRE (Prop_fdre_C_Q)         0.128    -0.386 r  cnt_reg[8]/Q
+                         net (fo=3, routed)           0.085    -0.301    cnt_reg__0[8]
+    SLICE_X110Y107       LUT6 (Prop_lut6_I1_O)        0.099    -0.202 r  cnt[9]_i_2/O
+                         net (fo=1, routed)           0.000    -0.202    p_0_in[9]
+    SLICE_X110Y107       FDRE                                         r  cnt_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.993    -0.747    clk1x
+    SLICE_X110Y107       FDRE                                         r  cnt_reg[9]/C
+                         clock pessimism              0.233    -0.514    
+    SLICE_X110Y107       FDRE (Hold_fdre_C_D)         0.092    -0.422    cnt_reg[9]
+  -------------------------------------------------------------------
+                         required time                          0.422    
+                         arrival time                          -0.202    
+  -------------------------------------------------------------------
+                         slack                                  0.220    
+
+Slack (MET) :             0.220ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_g/din_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.361ns  (logic 0.189ns (52.338%)  route 0.172ns (47.662%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.036ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.753ns
+    Source Clock Delay      (SCD):    -0.518ns
+    Clock Pessimism Removal (CPR):    -0.271ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.713    -0.518    inst_hdmi_trans/inst_encode_chn_g/CLK
+    SLICE_X109Y115       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/din_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y115       FDRE (Prop_fdre_C_Q)         0.141    -0.377 r  inst_hdmi_trans/inst_encode_chn_g/din_q_reg[3]/Q
+                         net (fo=11, routed)          0.172    -0.205    inst_hdmi_trans/inst_encode_chn_g/p_0_in3_in
+    SLICE_X111Y116       LUT5 (Prop_lut5_I3_O)        0.048    -0.157 r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg[3]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.157    inst_hdmi_trans/inst_encode_chn_g/q_m_3
+    SLICE_X111Y116       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.987    -0.753    inst_hdmi_trans/inst_encode_chn_g/CLK
+    SLICE_X111Y116       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[3]/C
+                         clock pessimism              0.271    -0.482    
+    SLICE_X111Y116       FDRE (Hold_fdre_C_D)         0.105    -0.377    inst_hdmi_trans/inst_encode_chn_g/q_m_reg_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.377    
+                         arrival time                          -0.157    
+  -------------------------------------------------------------------
+                         slack                                  0.220    
+
+Slack (MET) :             0.225ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_b/c1_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_b/c1_reg_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.313ns  (logic 0.141ns (45.021%)  route 0.172ns (54.979%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.762ns
+    Source Clock Delay      (SCD):    -0.526ns
+    Clock Pessimism Removal (CPR):    -0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.705    -0.526    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X111Y124       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c1_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y124       FDRE (Prop_fdre_C_Q)         0.141    -0.385 r  inst_hdmi_trans/inst_encode_chn_b/c1_q_reg/Q
+                         net (fo=1, routed)           0.172    -0.213    inst_hdmi_trans/inst_encode_chn_b/c1_q_reg_n_0
+    SLICE_X110Y124       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c1_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.978    -0.762    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X110Y124       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c1_reg_reg/C
+                         clock pessimism              0.249    -0.513    
+    SLICE_X110Y124       FDRE (Hold_fdre_C_D)         0.075    -0.438    inst_hdmi_trans/inst_encode_chn_b/c1_reg_reg
+  -------------------------------------------------------------------
+                         required time                          0.438    
+                         arrival time                          -0.213    
+  -------------------------------------------------------------------
+                         slack                                  0.225    
+
+Slack (MET) :             0.237ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_b/n1d_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_b/q_m_reg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.340ns  (logic 0.186ns (54.781%)  route 0.154ns (45.219%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.764ns
+    Source Clock Delay      (SCD):    -0.524ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.707    -0.524    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X109Y122       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/n1d_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y122       FDRE (Prop_fdre_C_Q)         0.141    -0.383 r  inst_hdmi_trans/inst_encode_chn_b/n1d_reg[3]/Q
+                         net (fo=4, routed)           0.154    -0.229    inst_hdmi_trans/inst_encode_chn_b/n1d[3]
+    SLICE_X109Y123       LUT6 (Prop_lut6_I3_O)        0.045    -0.184 r  inst_hdmi_trans/inst_encode_chn_b/q_m_reg[1]_i_1__1/O
+                         net (fo=1, routed)           0.000    -0.184    inst_hdmi_trans/inst_encode_chn_b/q_m_1
+    SLICE_X109Y123       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/q_m_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.976    -0.764    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X109Y123       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/q_m_reg_reg[1]/C
+                         clock pessimism              0.251    -0.513    
+    SLICE_X109Y123       FDRE (Hold_fdre_C_D)         0.092    -0.421    inst_hdmi_trans/inst_encode_chn_b/q_m_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.421    
+                         arrival time                          -0.184    
+  -------------------------------------------------------------------
+                         slack                                  0.237    
+
+Slack (MET) :             0.242ns  (arrival time - required time)
+  Source:                 inst_hdmi_trans/inst_encode_chn_b/c0_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Destination:            inst_hdmi_trans/inst_encode_chn_b/c0_reg_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock  {rise@0.000ns fall@3.368ns period=6.737ns})
+  Path Group:             clk_out1_clock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clock rise@0.000ns - clk_out1_clock rise@0.000ns)
+  Data Path Delay:        0.308ns  (logic 0.141ns (45.766%)  route 0.167ns (54.234%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.761ns
+    Source Clock Delay      (SCD):    -0.525ns
+    Clock Pessimism Removal (CPR):    -0.236ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -1.257    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.231 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.706    -0.525    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X111Y123       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c0_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y123       FDRE (Prop_fdre_C_Q)         0.141    -0.384 r  inst_hdmi_trans/inst_encode_chn_b/c0_q_reg/Q
+                         net (fo=1, routed)           0.167    -0.217    inst_hdmi_trans/inst_encode_chn_b/c0_q
+    SLICE_X111Y123       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c0_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    inst_clock/inst/clk_in1
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  inst_clock/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    inst_clock/inst/clk_in1_clock
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -1.769    inst_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.740 r  inst_clock/inst/clkout1_buf/O
+                         net (fo=340, routed)         0.979    -0.761    inst_hdmi_trans/inst_encode_chn_b/CLK
+    SLICE_X111Y123       FDRE                                         r  inst_hdmi_trans/inst_encode_chn_b/c0_reg_reg/C
+                         clock pessimism              0.236    -0.525    
+    SLICE_X111Y123       FDRE (Hold_fdre_C_D)         0.066    -0.459    inst_hdmi_trans/inst_encode_chn_b/c0_reg_reg
+  -------------------------------------------------------------------
+                         required time                          0.459    
+                         arrival time                          -0.217    
+  -------------------------------------------------------------------
+                         slack                                  0.242    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clock
+Waveform(ns):       { 0.000 3.368 }
+Period(ns):         6.737
+Sources:            { inst_clock/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y26     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y19     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y24     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y21     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X4Y20     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y20     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y16     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y22     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X4Y21     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.389         6.737       4.348      RAMB36_X5Y23     inst_rd_image/inst_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       6.737       206.623    MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X92Y117    inst_rd_image/rd_addr_reg[1]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X92Y117    inst_rd_image/rd_addr_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X92Y117    inst_rd_image/rd_addr_reg[3]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X92Y117    inst_rd_image/rd_addr_reg[4]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X92Y117    inst_rd_image/rd_addr_reg[5]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X111Y127   inst_hdmi_trans/inst_encode_chn_b/cnt_reg[1]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X109Y116   inst_vga_shift/cnt_h_reg[0]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X109Y116   inst_vga_shift/cnt_h_reg[10]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X109Y116   inst_vga_shift/cnt_h_reg[11]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X109Y116   inst_vga_shift/cnt_h_reg[1]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X110Y128   inst_hdmi_trans/inst_encode_chn_b/dout_reg[1]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X110Y128   inst_hdmi_trans/inst_encode_chn_b/dout_reg[5]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X110Y128   inst_hdmi_trans/inst_encode_chn_b/dout_reg[6]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X110Y128   inst_hdmi_trans/inst_encode_chn_b/dout_reg[9]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X108Y114   inst_vga_shift/cnt_h_reg[5]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X108Y114   inst_vga_shift/cnt_h_reg[6]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         3.368       2.868      SLICE_X111Y121   inst_hdmi_trans/inst_encode_chn_g/cnt_reg[3]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X107Y114   inst_hdmi_trans/inst_encode_chn_g/din_q_reg[0]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X107Y114   inst_hdmi_trans/inst_encode_chn_g/n1d_reg[0]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         3.368       2.868      SLICE_X107Y114   inst_hdmi_trans/inst_encode_chn_g/n1d_reg[1]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_clock
+  To Clock:  clk_out2_clock
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            9  Failing Endpoints,  Worst Slack       -0.245ns,  Total Violation       -1.234ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_clock
+Waveform(ns):       { 0.000 0.674 }
+Period(ns):         1.347
+Sources:            { inst_clock/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            1.592         1.347       -0.245     BUFGCTRL_X0Y17   inst_clock/inst/clkout2_buf/I
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y142    inst_hdmi_trans/inst_parallel_to_serial_chn_b/OSERDESE2_inst_master/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y141    inst_hdmi_trans/inst_parallel_to_serial_chn_b/OSERDESE2_inst_slave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y120    inst_hdmi_trans/inst_parallel_to_serial_chn_g/OSERDESE2_inst_master/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y119    inst_hdmi_trans/inst_parallel_to_serial_chn_g/OSERDESE2_inst_slave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y114    inst_hdmi_trans/inst_parallel_to_serial_chn_r/OSERDESE2_inst_master/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y113    inst_hdmi_trans/inst_parallel_to_serial_chn_r/OSERDESE2_inst_slave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y126    inst_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_master/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.471         1.347       -0.124     OLOGIC_X1Y125    inst_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_slave/CLK
+Min Period  n/a     MMCME2_ADV/CLKOUT1  n/a            1.249         1.347       0.098      MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKOUT1
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       1.347       212.013    MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKOUT1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clock
+  To Clock:  clkfbout_clock
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       20.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clock
+Waveform(ns):       { 0.000 40.000 }
+Period(ns):         80.000
+Sources:            { inst_clock/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            1.592         80.000      78.408     BUFGCTRL_X0Y18   inst_clock/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         80.000      78.751     MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         80.000      78.751     MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       80.000      20.000     MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       80.000      133.360    MMCME2_ADV_X1Y2  inst_clock/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

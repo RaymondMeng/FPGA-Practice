@@ -1,0 +1,667 @@
+
+*** Running vivado
+    with args -log adda_hdmi_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source adda_hdmi_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source adda_hdmi_top.tcl -notrace
+Command: synth_design -top adda_hdmi_top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 53376 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 501.789 ; gain = 96.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'adda_hdmi_top' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:3]
+	Parameter CNT_MAX bound to: 3999999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (1#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_clock' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/hdmi_clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_clock' (2#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/hdmi_clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gen_wave_data' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:3]
+WARNING: [Synth 8-567] referenced signal 'da_data1' should be on the sensitivity list [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:28]
+WARNING: [Synth 8-567] referenced signal 'da_data2' should be on the sensitivity list [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:28]
+WARNING: [Synth 8-567] referenced signal 'da_data3' should be on the sensitivity list [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:28]
+WARNING: [Synth 8-567] referenced signal 'real_dat' should be on the sensitivity list [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:28]
+INFO: [Synth 8-6157] synthesizing module 'rom_sin_1024_8' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_sin_1024_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_sin_1024_8' (3#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_sin_1024_8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rom_rectangle_1024_8' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_rectangle_1024_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_rectangle_1024_8' (4#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_rectangle_1024_8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rom_square_1024_8' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_square_1024_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_square_1024_8' (5#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/rom_square_1024_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gen_wave_data' (6#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/gen_wave_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'wave_mix' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/wave_mix.v:4]
+	Parameter IDLE bound to: 3'b001 
+	Parameter CAPTURE bound to: 3'b010 
+	Parameter WAIT bound to: 3'b100 
+	Parameter WAIT_MAX bound to: 4000000 - type: integer 
+	Parameter DATA_MAX bound to: 1023 - type: integer 
+	Parameter ADDR_MAX bound to: 1023 - type: integer 
+	Parameter AMP_DATA bound to: 255 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dpram_8_1024' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/dpram_8_1024_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram_8_1024' (7#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/dpram_8_1024_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_background' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/hdmi_background.v:3]
+	Parameter H_TOTAL bound to: 2199 - type: integer 
+	Parameter H_SYNC bound to: 43 - type: integer 
+	Parameter H_START bound to: 189 - type: integer 
+	Parameter H_END bound to: 2109 - type: integer 
+	Parameter V_TOTAL bound to: 1124 - type: integer 
+	Parameter V_SYNC bound to: 4 - type: integer 
+	Parameter V_START bound to: 40 - type: integer 
+	Parameter V_END bound to: 1120 - type: integer 
+	Parameter WINDOW_X bound to: 1024 - type: integer 
+	Parameter WINDOW_Y bound to: 256 - type: integer 
+	Parameter WAVE_BOUNDRY_U bound to: 452 - type: integer 
+	Parameter WAVE_BOUNDRY_L bound to: 637 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_background' (8#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/hdmi_background.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'wave_mix' (9#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/wave_mix.v:4]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_trans' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/hdmi_trans.v:44]
+INFO: [Synth 8-6157] synthesizing module 'encode' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:46]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'encode' (10#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:46]
+INFO: [Synth 8-6157] synthesizing module 'parallel_to_serial' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/parallel_to_serial.v:2]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6155] done synthesizing module 'parallel_to_serial' (13#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/parallel_to_serial.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_trans' (14#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/hdmi_trans.v:44]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:174]
+INFO: [Synth 8-6157] synthesizing module 'ila_da' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/ila_da_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_da' (15#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/ila_da_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:179]
+INFO: [Synth 8-6157] synthesizing module 'ila_ad' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/ila_ad_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_ad' (16#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/.Xil/Vivado-52892-LAPTOP-IP0GL19C/realtime/ila_ad_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_gen_wave_data'. This will prevent further optimization [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:134]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_da_ila'. This will prevent further optimization [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:174]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_ad_ila'. This will prevent further optimization [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:179]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_wave_mix'. This will prevent further optimization [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:141]
+WARNING: [Synth 8-3848] Net sys_clk in module/entity adda_hdmi_top does not have driver. [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'adda_hdmi_top' (17#1) [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/adda_top.v:3]
+WARNING: [Synth 8-3917] design adda_hdmi_top has port hdmi_oen driven by constant 1
+WARNING: [Synth 8-3331] design gen_wave_data has unconnected port choice[1]
+WARNING: [Synth 8-3331] design gen_wave_data has unconnected port choice[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 557.449 ; gain = 152.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 557.449 ; gain = 152.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 557.449 ; gain = 152.191
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_sin_1024_8/rom_sin_1024_8/rom_sin_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_sin_1024_8'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_sin_1024_8/rom_sin_1024_8/rom_sin_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_sin_1024_8'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_rectangle_1024_8/rom_rectangle_1024_8/rom_rectangle_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_rectangle_1024_8'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_rectangle_1024_8/rom_rectangle_1024_8/rom_rectangle_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_rectangle_1024_8'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_square_1024_8/rom_square_1024_8/rom_square_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_square_1024_8'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/rom_square_1024_8/rom_square_1024_8/rom_square_1024_8_in_context.xdc] for cell 'inst_gen_wave_data/inst_rom_square_1024_8'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/clock/clock/clock_in_context.xdc] for cell 'inst_clock'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/clock/clock/clock_in_context.xdc] for cell 'inst_clock'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/ila_da/ila_da/ila_da_in_context.xdc] for cell 'inst_da_ila'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/ila_da/ila_da/ila_da_in_context.xdc] for cell 'inst_da_ila'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/ila_ad/ila_ad/ila_ad_in_context.xdc] for cell 'inst_ad_ila'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/ila_ad/ila_ad/ila_ad_in_context.xdc] for cell 'inst_ad_ila'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/dpram_8_1024/dpram_8_1024/dpram_8_1024_in_context.xdc] for cell 'inst_wave_mix/inst_ram'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/dpram_8_1024/dpram_8_1024/dpram_8_1024_in_context.xdc] for cell 'inst_wave_mix/inst_ram'
+Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/hdmi_clock/hdmi_clock/hdmi_clock_in_context.xdc] for cell 'inst_hdmi_clock'
+Finished Parsing XDC File [c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/hdmi_clock/hdmi_clock/hdmi_clock_in_context.xdc] for cell 'inst_hdmi_clock'
+Parsing XDC File [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/constrs_1/new/top_io.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/constrs_1/new/top_io.xdc:2]
+Finished Parsing XDC File [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/constrs_1/new/top_io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/constrs_1/new/top_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/adda_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/adda_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 924.461 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 924.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 924.461 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst_wave_mix/inst_ram' at clock pin 'clkb' is different from the actual clock period '6.737', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for inst_gen_wave_data/inst_rom_sin_1024_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_gen_wave_data/inst_rom_rectangle_1024_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_gen_wave_data/inst_rom_square_1024_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_clock. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_da_ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_ad_ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_wave_mix/inst_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_hdmi_clock. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_ram_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_ram_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'wave_mix'
+INFO: [Synth 8-5545] ROM "timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "timer" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:162]
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                 CAPTURE |                              010 |                              010
+                    WAIT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'wave_mix'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   5 Input      5 Bit       Adders := 6     
+	   4 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               13 Bit    Registers := 3     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 41    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module adda_hdmi_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module gen_wave_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module hdmi_background 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               13 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 4     
+Module wave_mix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module encode 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst_hdmi_background/cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_hdmi_background/y_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_hdmi_background/x_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_hdmi_background/rd_ram_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_r/c1_q_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_q_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:141]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_r/c1_reg_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_reg_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:142]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/de_q_reg' into 'inst_hdmi_trans/inst_encode_chn_r/de_q_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:136]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/de_reg_reg' into 'inst_hdmi_trans/inst_encode_chn_r/de_reg_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:137]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/c0_q_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_q_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:139]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/c0_reg_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_reg_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:140]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/c1_q_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_q_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:141]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_g/c1_reg_reg' into 'inst_hdmi_trans/inst_encode_chn_r/c0_reg_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:142]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_b/de_q_reg' into 'inst_hdmi_trans/inst_encode_chn_r/de_q_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:136]
+INFO: [Synth 8-4471] merging register 'inst_hdmi_trans/inst_encode_chn_b/de_reg_reg' into 'inst_hdmi_trans/inst_encode_chn_r/de_reg_reg' [C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.srcs/sources_1/new/encode.v:137]
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design adda_hdmi_top has port hdmi_oen driven by constant 1
+WARNING: [Synth 8-3331] design gen_wave_data has unconnected port choice[1]
+WARNING: [Synth 8-3331] design gen_wave_data has unconnected port choice[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_hdmi_trans/inst_encode_chn_r/c0_q_reg )
+INFO: [Synth 8-3886] merging instance 'inst_hdmi_trans/inst_encode_chn_b/n0q_m_reg[0]' (FD) to 'inst_hdmi_trans/inst_encode_chn_b/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst_hdmi_trans/inst_encode_chn_g/n0q_m_reg[0]' (FD) to 'inst_hdmi_trans/inst_encode_chn_g/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst_hdmi_trans/inst_encode_chn_r/n0q_m_reg[0]' (FD) to 'inst_hdmi_trans/inst_encode_chn_r/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst_hdmi_trans/inst_encode_chn_r/c0_reg_reg' (FD) to 'inst_hdmi_trans/inst_encode_chn_r/c0_q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_hdmi_trans/inst_encode_chn_r/c0_q_reg )
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[0]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[1]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[2]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[3]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[4]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[5]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[6]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[8]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[9]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[10]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[11]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[12]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[13]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[14]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[16]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[17]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[18]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[19]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[20]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[21]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[22]' (FDR) to 'inst_wave_mix/inst_hdmi_background/hdmi_td_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_wave_mix/\inst_hdmi_background/hdmi_td_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[0]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[1]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[2]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[3]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[4]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[5]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[6]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[8]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[9]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[10]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[11]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[12]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[13]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[14]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[16]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[17]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[18]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[19]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[20]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[21]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst_wave_mix/hdmi_td_r_reg[22]' (FD) to 'inst_wave_mix/hdmi_td_r_reg[23]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_clock/clk_out1' to pin 'inst_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_clock/clk_out2' to pin 'inst_clock/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_hdmi_clock/clk_in1' to pin 'inst_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_hdmi_clock/clk_out1' to pin 'inst_hdmi_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'inst_hdmi_clock/clk_in1' to 'inst_gen_wave_data/rom_addr0_inferred/rom_addr_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_hdmi_clock/clk_out2' to pin 'inst_hdmi_clock/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'inst_hdmi_clock/clk_in1' to 'inst_gen_wave_data/rom_addr0_inferred/rom_addr_reg[0]/C'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 924.461 ; gain = 519.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 937.828 ; gain = 532.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |rom_sin_1024_8       |         1|
+|2     |rom_rectangle_1024_8 |         1|
+|3     |rom_square_1024_8    |         1|
+|4     |dpram_8_1024         |         1|
+|5     |clock                |         1|
+|6     |hdmi_clock           |         1|
+|7     |ila_da               |         1|
+|8     |ila_ad               |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |clock                |     1|
+|2     |dpram_8_1024         |     1|
+|3     |hdmi_clock           |     1|
+|4     |ila_ad               |     1|
+|5     |ila_da               |     1|
+|6     |rom_rectangle_1024_8 |     1|
+|7     |rom_sin_1024_8       |     1|
+|8     |rom_square_1024_8    |     1|
+|9     |CARRY4               |    29|
+|10    |LUT1                 |    16|
+|11    |LUT2                 |    49|
+|12    |LUT3                 |    53|
+|13    |LUT4                 |    56|
+|14    |LUT5                 |   124|
+|15    |LUT6                 |   146|
+|16    |OSERDESE2            |     4|
+|17    |OSERDESE2_1          |     4|
+|18    |FDCE                 |    42|
+|19    |FDRE                 |   228|
+|20    |IBUF                 |     9|
+|21    |OBUF                 |    11|
+|22    |OBUFDS               |     4|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------+------+
+|      |Instance                          |Module               |Cells |
++------+----------------------------------+---------------------+------+
+|1     |top                               |                     |   813|
+|2     |  inst_gen_wave_data              |gen_wave_data        |    45|
+|3     |  inst_wave_mix                   |wave_mix             |   355|
+|4     |    inst_hdmi_background          |hdmi_background      |   182|
+|5     |  inst_hdmi_trans                 |hdmi_trans           |   387|
+|6     |    inst_encode_chn_b             |encode               |   127|
+|7     |    inst_encode_chn_g             |encode_0             |   123|
+|8     |    inst_encode_chn_r             |encode_1             |   125|
+|9     |    inst_parallel_to_serial_chn_b |parallel_to_serial   |     3|
+|10    |    inst_parallel_to_serial_chn_g |parallel_to_serial_2 |     3|
+|11    |    inst_parallel_to_serial_chn_r |parallel_to_serial_3 |     3|
+|12    |    inst_parallel_to_serial_clk   |parallel_to_serial_4 |     3|
++------+----------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 942.707 ; gain = 170.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 942.707 ; gain = 537.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 942.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 942.707 ; gain = 539.160
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 942.707 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/synth_1/adda_hdmi_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file adda_hdmi_top_utilization_synth.rpt -pb adda_hdmi_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 26 05:32:44 2022...

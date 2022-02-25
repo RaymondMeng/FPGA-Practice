@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 25 23:55:41 2022
+# Process ID: 20512
+# Current directory: C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/ila_ad_synth_1
+# Command line: vivado.exe -log ila_ad.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_ad.tcl
+# Log file: C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/ila_ad_synth_1/ila_ad.vds
+# Journal file: C:/Xilinx/vivado_project/adda_hdmi_final/adda_hdmi_final.runs/ila_ad_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_ad.tcl -notrace

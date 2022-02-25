@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/pwm_led/pwm_led.sim/sim_1/synth/timing/xsim/pwm_led_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led
+INFO: [VRFC 10-311] analyzing module glbl

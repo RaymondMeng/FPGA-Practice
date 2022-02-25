@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 25 16:30:14 2022
+# Process ID: 20488
+# Current directory: C:/Xilinx/vivado_project/shift_LED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43248 C:\Xilinx\vivado_project\shift_LED\shift_LED.xpr
+# Log file: C:/Xilinx/vivado_project/shift_LED/vivado.log
+# Journal file: C:/Xilinx/vivado_project/shift_LED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/vivado_project/shift_LED/shift_LED.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 824.863 ; gain = 216.383

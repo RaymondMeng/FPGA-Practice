@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  2 18:02:30 2022
+# Process ID: 57880
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/adda_test/adda_test.runs/synth_1
+# Command line: vivado.exe -log adda_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adda_test.tcl
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/adda_test/adda_test.runs/synth_1/adda_test.vds
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/adda_test/adda_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adda_test.tcl -notrace

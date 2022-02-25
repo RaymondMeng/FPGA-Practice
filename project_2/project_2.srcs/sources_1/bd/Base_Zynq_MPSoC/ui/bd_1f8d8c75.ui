@@ -1,0 +1,24 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port led_4bits -pg 1 -y 180 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 180 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 190 640 350 960
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 NJ
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 2 650 340 970
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 950
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc axi_gpio_0_GPIO 1 3 2 NJ 180 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 180 630
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N
+levelinfo -pg 1 0 330 800 1110 1390 1540 -top 0 -bot 400
+"
+}
+

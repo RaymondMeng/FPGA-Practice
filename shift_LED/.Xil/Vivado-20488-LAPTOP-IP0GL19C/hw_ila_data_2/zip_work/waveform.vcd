@@ -1,0 +1,35 @@
+$date
+        2022-Feb-26 05:37:52
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " da_data_OBUF [7:0] $end
+$var reg 1 * _TRIGGER $end
+$var reg 1 + _WINDOW $end
+$var reg 1 , _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0*
+1+
+0,
+$end
+#4
+b11111111 "
+#260
+b0 "
+#512
+1*
+#516
+b10000000 "
+#517
+b11111111 "
+#772
+b0 "

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.sim/sim_1/behav/modelsim
+vfifo_wr256_8_rd256_8
+!s10a 1642992694
+Z1 !s110 1643196408
+!i10b 1
+!s100 b@<k8k?HAIVQQThzUlUb]0
+IOMQ;LVi@`E[SPY>`C:@Rk0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1642992694
+8../../../../FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/sim/fifo_wr256_8_rd256_8.v
+F../../../../FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/sim/fifo_wr256_8_rd256_8.v
+L0 56
+Z3 OL;L;10.7;67
+r1
+!s85 0
+31
+Z4 !s108 1643196408.000000
+Z5 !s107 ../../../../FIFO.srcs/sim_1/new/tb_fifo_test.v|../../../../FIFO.srcs/sources_1/new/fifo_test.v|../../../../FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/sim/fifo_wr256_8_rd256_8.v|
+Z6 !s90 -64|-incr|-work|xil_defaultlib|../../../../FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/sim/fifo_wr256_8_rd256_8.v|../../../../FIFO.srcs/sources_1/new/fifo_test.v|../../../../FIFO.srcs/sim_1/new/tb_fifo_test.v|
+!i113 0
+Z7 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vtb_fifo_test
+!s10a 1643196290
+R1
+!i10b 1
+!s100 @GaDc1gD]m9YaMfQbR9L22
+I^@T>ccmn]9zMfoE:SGVe:0
+R2
+R0
+w1643196290
+8../../../../FIFO.srcs/sim_1/new/tb_fifo_test.v
+F../../../../FIFO.srcs/sim_1/new/tb_fifo_test.v
+L0 23
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8

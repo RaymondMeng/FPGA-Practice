@@ -1,0 +1,128 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.sim/sim_1/behav/modelsim
+T_opt
+!s110 1642935110
+VYhS1F=85^f5G8YJ5Z`j@c1
+Z1 04 9 4 work tb_ram_pp fast 0
+Z2 04 4 4 work glbl fast 0
+=1-00e04c681619-61ed3345-3a8-a654
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.7;67
+R0
+T_opt1
+!s110 1642907083
+V;3DNGzXdY<M2??HedAhWL2
+R1
+R2
+=1-00e04c681619-61ecc5cb-1a-695c
+R3
+R4
+n@_opt1
+R5
+R0
+T_opt2
+!s110 1642936540
+V31UT_72[O2RC4A62Ej=ed0
+R1
+R2
+=1-00e04c681619-61ed38dc-196-69f8
+R3
+R4
+n@_opt2
+R5
+vglbl
+Z6 !s110 1642936525
+!i10b 1
+!s100 7cd<?T0KPANS9PBoRj:BY2
+INdU5f[;Bb^Y=SUnL>A9=o3
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1544155481
+8glbl.v
+Fglbl.v
+L0 6
+Z8 OL;L;10.7;67
+r1
+!s85 0
+31
+Z9 !s108 1642936525.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z10 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vram_pp
+!s10a 1642935641
+!s110 1642935653
+!i10b 1
+!s100 IoN^izA0[f7b5R`U[e^4[1
+INd8_iC9V`Uhbjk2UOFTH]1
+R7
+R0
+w1642935641
+8../../../../ram_pp.srcs/sources_1/new/ram_pp.v
+F../../../../ram_pp.srcs/sources_1/new/ram_pp.v
+Z11 L0 23
+R8
+r1
+!s85 0
+31
+!s108 1642935653.000000
+Z12 !s107 ../../../../ram_pp.srcs/sim_1/new/tb_ram_pp.v|../../../../ram_pp.srcs/sources_1/new/ram_pp.v|../../../../ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/sim/ram_wr256_8_rd256_8.v|
+Z13 !s90 -64|-incr|-work|xil_defaultlib|../../../../ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/sim/ram_wr256_8_rd256_8.v|../../../../ram_pp.srcs/sources_1/new/ram_pp.v|../../../../ram_pp.srcs/sim_1/new/tb_ram_pp.v|
+!i113 0
+R10
+R4
+vram_wr256_8_rd256_8
+R6
+!i10b 1
+!s100 _zPD`:HjEG:9N=akHbD`M0
+I7O0:U9jJbez90>2<:Vf7z3
+R7
+R0
+w1642936497
+8../../../../ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/sim/ram_wr256_8_rd256_8.v
+F../../../../ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/sim/ram_wr256_8_rd256_8.v
+L0 56
+R8
+r1
+!s85 0
+31
+R9
+R12
+R13
+!i113 0
+R10
+R4
+vtb_ram_pp
+!s10a 1642841717
+!s110 1642841732
+!i10b 1
+!s100 TAK=8io?X:=JMmGFW58>T1
+IjABB6:<5:?X6i7c8e_6`T0
+R7
+R0
+w1642841717
+8../../../../ram_pp.srcs/sim_1/new/tb_ram_pp.v
+F../../../../ram_pp.srcs/sim_1/new/tb_ram_pp.v
+R11
+R8
+r1
+!s85 0
+31
+!s108 1642841732.000000
+R12
+R13
+!i113 0
+R10
+R4

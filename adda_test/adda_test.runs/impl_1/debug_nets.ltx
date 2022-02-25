@@ -1,0 +1,132 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "50000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "inst_ad_ila",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "FF59C1BCD7A1575192DAD31CCA28B51F",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "ad_data_IBUF",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ad_data_IBUF[7]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[6]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[5]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[4]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[3]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[2]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[1]"
+                                            },
+                                            {
+                                                "name": "ad_data_IBUF[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "inst_da_ila",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3BB5264027D55E0A873FF5B089189CA6",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "da_data_OBUF",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "da_data_OBUF[7]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[6]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[5]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[4]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[3]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[2]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[1]"
+                                            },
+                                            {
+                                                "name": "da_data_OBUF[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

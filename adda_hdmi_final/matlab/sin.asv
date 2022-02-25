@@ -1,0 +1,6 @@
+X = linspace(0, 2*pi, 512);
+Y = (255 / 2) * (sin(X) + 1);
+Y = uint8(Y);
+plot(X, Y);
+fid0 = fopen('sin512.txt', 'wt');
+fprintf(fid0, '%')

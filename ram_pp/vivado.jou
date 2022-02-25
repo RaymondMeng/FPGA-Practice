@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan 22 10:26:42 2022
+# Process ID: 17992
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8756 C:\Users\Raymond_Meng\Documents\xlinx_FPGA\vivado_projects\ram_pp\ram_pp.xpr
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/vivado.log
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp\vivado.jou
+#-----------------------------------------------------------start_gui
+oopen_project C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.xprupdate_compile_order -fileset sources_1
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sim_1/new/tb_ram_pp.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sim_1/new/tb_ram_pp.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property target_simulator ModelSim [current_project]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+set_property -dict [list CONFIG.Enable_A {Always_Enabled}] [get_ips ram_wr256_8_rd256_8]
+generate_target all [get_files  C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/ram_wr256_8_rd256_8.xci]
+catch { config_ip_cache -export [get_ips -all ram_wr256_8_rd256_8] }
+export_ip_user_files -of_objects [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/ram_wr256_8_rd256_8.xci] -no_script -sync -force -quiet
+reset_run ram_wr256_8_rd256_8_synth_1
+launch_runs -jobs 4 ram_wr256_8_rd256_8_synth_1
+export_simulation -of_objects [get_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.srcs/sources_1/ip/ram_wr256_8_rd256_8/ram_wr256_8_rd256_8.xci] -directory C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.ip_user_files -ipstatic_source_dir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Data_Disk/Xilinx/xilib} {questa=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.cache/compile_simlib/questa} {riviera=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.cache/compile_simlib/riviera} {activehdl=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/ram_pp/ram_pp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path C:/modeltech64_10.7/win64
+close_project
+create_project FIFO C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO -part xc7z020clg400-2
+set_property compxlib.modelsim_compiled_library_dir C:/Data_Disk/Xilinx/xilib [current_project]
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_wr256_8_rd256_8 -dir c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {fifo_wr256_8_rd256_8} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Input_Data_Width {8} CONFIG.Input_Depth {256} CONFIG.Output_Data_Width {8} CONFIG.Output_Depth {256} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Data_Count_Width {8} CONFIG.Write_Data_Count_Width {8} CONFIG.Read_Data_Count_Width {8} CONFIG.Full_Threshold_Assert_Value {253} CONFIG.Full_Threshold_Negate_Value {252} CONFIG.Enable_Safety_Circuit {false}] [get_ips fifo_wr256_8_rd256_8]
+generate_target {instantiation_template} [get_files c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/fifo_wr256_8_rd256_8.xci]
+generate_target all [get_files  c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/fifo_wr256_8_rd256_8.xci]
+catch { config_ip_cache -export [get_ips -all fifo_wr256_8_rd256_8] }
+export_ip_user_files -of_objects [get_files c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/fifo_wr256_8_rd256_8.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/fifo_wr256_8_rd256_8.xci]
+launch_runs -jobs 4 fifo_wr256_8_rd256_8_synth_1
+export_simulation -of_objects [get_files c:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/ip/fifo_wr256_8_rd256_8/fifo_wr256_8_rd256_8.xci] -directory C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.ip_user_files -ipstatic_source_dir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Data_Disk/Xilinx/xilib} {questa=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.cache/compile_simlib/questa} {riviera=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.cache/compile_simlib/riviera} {activehdl=C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/new
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/new/fifo_test.v w ]
+add_files C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sources_1/new/fifo_test.v
+file mkdir C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sim_1/new/tb_fifo_test.v w ]
+add_files -fileset sim_1 C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/FIFO/FIFO.srcs/sim_1/new/tb_fifo_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path C:/modeltech64_10.7/win64

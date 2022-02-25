@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 17 05:59:32 2021
+# Process ID: 22376
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4964 C:\Users\Raymond_Meng\Documents\xlinx_FPGA\vivado_projects\shift_LED\shift_LED.xpr
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED/vivado.log
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED/shift_LED.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD SSTL15 [get_ports [list {led[3]}]]
+set_property IOSTANDARD SSTL15 [get_ports [list {led[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property target_constrs_file C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/shift_LED/shift_LED.srcs/constrs_1/new/top_pin.xdc [current_fileset -constrset]
+save_constraints -force

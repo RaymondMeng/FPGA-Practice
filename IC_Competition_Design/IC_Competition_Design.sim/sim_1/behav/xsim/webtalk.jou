@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 20 23:56:06 2022
+# Process ID: 21760
+# Current directory: C:/Xilinx/vivado_project/IC_Competition_Design/IC_Competition_Design.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Xilinx/vivado_project/IC_Competition_Design/IC_Competition_Design.sim/sim_1/behav/xsim/xsim.dir/source_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Xilinx/vivado_project/IC_Competition_Design/IC_Competition_Design.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Xilinx/vivado_project/IC_Competition_Design/IC_Competition_Design.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Xilinx/vivado_project/IC_Competition_Design/IC_Competition_Design.sim/sim_1/behav/xsim/xsim.dir/source_behav/webtalk/xsim_webtalk.tcl -notrace

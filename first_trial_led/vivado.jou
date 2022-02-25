@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 11 21:49:18 2022
+# Process ID: 39352
+# Current directory: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35968 C:\Users\Raymond_Meng\Documents\xlinx_FPGA\vivado_projects\first_trial_led\first_trial_led.xpr
+# Log file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led/vivado.log
+# Journal file: C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/first_trial_led/first_trial_led.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/PLL/PLL.sim/sim_1/behav/modelsim
+vclock
+Z1 !s10a 1642733480
+Z2 !s110 1642735573
+!i10b 1
+!s100 gVW<^6V[U0[R^DiPWDbd=0
+Ic=C_oe>>eRmGMm1iJFMSS3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1642733480
+8../../../../PLL.srcs/sources_1/ip/clock/clock.v
+F../../../../PLL.srcs/sources_1/ip/clock/clock.v
+L0 72
+Z5 OL;L;10.7;67
+r1
+!s85 0
+31
+Z6 !s108 1642735573.000000
+Z7 !s107 ../../../../PLL.srcs/sim_1/new/tb_pll.v|../../../../PLL.srcs/sources_1/new/pll_test.v|../../../../PLL.srcs/sources_1/ip/clock/clock.v|../../../../PLL.srcs/sources_1/ip/clock/clock_clk_wiz.v|
+Z8 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../PLL.srcs/sources_1/ip/clock|../../../../PLL.srcs/sources_1/ip/clock/clock_clk_wiz.v|../../../../PLL.srcs/sources_1/ip/clock/clock.v|../../../../PLL.srcs/sources_1/new/pll_test.v|../../../../PLL.srcs/sim_1/new/tb_pll.v|
+!i113 0
+Z9 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -work xil_defaultlib +incdir+../../../../PLL.srcs/sources_1/ip/clock -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vclock_clk_wiz
+R1
+R2
+!i10b 1
+!s100 12nzS2n8HMRWE>T<<ga252
+IW0bVWo^Y@>zdcBo5lY>W;2
+R3
+R0
+R4
+8../../../../PLL.srcs/sources_1/ip/clock/clock_clk_wiz.v
+F../../../../PLL.srcs/sources_1/ip/clock/clock_clk_wiz.v
+L0 70
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+vpll_test
+!s10a 1642735018
+R2
+!i10b 1
+!s100 HS<YTbBAV`U`LE[Na3Tk=0
+IK?olgQH8W7ODzGof:>iXB3
+R3
+R0
+w1642735018
+8../../../../PLL.srcs/sources_1/new/pll_test.v
+F../../../../PLL.srcs/sources_1/new/pll_test.v
+L0 23
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11

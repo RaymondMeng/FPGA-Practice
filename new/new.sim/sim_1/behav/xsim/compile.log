@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_led_sim
+ERROR: [VRFC 10-2989] 'CHANG_TIME' is not declared [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v:36]
+ERROR: [VRFC 10-2865] module 'pwm_led_sim' ignored due to previous errors [C:/Users/Raymond_Meng/Documents/xlinx_FPGA/vivado_projects/new/new.srcs/sim_1/new/sim.v:23]

@@ -1,0 +1,8 @@
+X = linspace(0, 2*pi, 1920);
+Y = (1079 / 2) * (sin(X) + 1);
+Y = uint16(Y);
+Y=sign(Y);
+plot(X, Y);
+fid0 = fopen('C:\Xilinx\vivado_project\adda_hdmi_final\matlab\sin1920_1080.txt', 'wt');
+fprintf(fid0, '%02x,\n', Y);
+fid0 = fclose(fid0);
