@@ -1,0 +1,610 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 27 18:11:04 2023
+# Process ID: 23928
+# Current directory: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1
+# Command line: vivado.exe -log predeal_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source predeal_0.tcl
+# Log file: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/predeal_0.vds
+# Journal file: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source predeal_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top predeal_0 -part xc7z010clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22376 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 467.332 ; gain = 95.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'predeal_0' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/synth/predeal_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'predeal' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:75]
+INFO: [Synth 8-6157] synthesizing module 'predeal_default_clock_driver' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (2#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (3#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg_w_init.v:3]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/xlclockdriver_rd.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (4#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'predeal_default_clock_driver' (5#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:53]
+INFO: [Synth 8-6157] synthesizing module 'predeal_struct' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:7]
+INFO: [Synth 8-6157] synthesizing module 'xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal_entity_declarations.v:109]
+INFO: [Synth 8-638] synthesizing module 'predeal_fir_compiler_v7_2_i0' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/synth/predeal_fir_compiler_v7_2_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: predeal_fir_compiler_v7_2_i0 - type: string 
+	Parameter C_COEF_FILE bound to: predeal_fir_compiler_v7_2_i0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 15 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 0 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 1 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 29 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 15 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 12,12 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 24 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 24 - type: string 
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 19,19 - type: string 
+	Parameter C_COEF_WIDTH bound to: 19 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 32,31 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 43 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 43 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 43 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,12 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 15 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 1 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 23 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61157' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/synth/predeal_fir_compiler_v7_2_i0.vhd:201]
+WARNING: [Synth 8-5858] RAM p_casc_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'predeal_fir_compiler_v7_2_i0' (19#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/synth/predeal_fir_compiler_v7_2_i0.vhd:71]
+INFO: [Synth 8-6155] done synthesizing module 'xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04' (20#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal_entity_declarations.v:109]
+INFO: [Synth 8-6157] synthesizing module 'predeal_xlconvert' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal_entity_declarations.v:41]
+	Parameter din_width bound to: 43 - type: integer 
+	Parameter din_bin_pt bound to: 40 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 24 - type: integer 
+	Parameter dout_bin_pt bound to: 22 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'convert_type' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 43 - type: integer 
+	Parameter old_bin_pt bound to: 40 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 24 - type: integer 
+	Parameter new_bin_pt bound to: 22 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter fp_bin_pt bound to: 40 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter q_bin_pt bound to: 22 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter old_bin_pt bound to: 40 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter new_bin_pt bound to: 22 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000010010 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000010010 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000011011 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (21#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb' (22#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc' (23#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter old_bin_pt bound to: 22 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 24 - type: integer 
+	Parameter new_bin_pt bound to: 22 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000011011 
+	Parameter old_bin_pt bound to: 22 - type: integer 
+	Parameter new_width bound to: 24 - type: integer 
+	Parameter new_bin_pt bound to: 22 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast' (24#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith' (25#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized0' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 43 - type: integer 
+	Parameter old_bin_pt bound to: 40 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_bin_pt bound to: 40 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized0' (25#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type' (26#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg.v:94]
+	Parameter width bound to: 24 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'srlc33e' [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg.v:60]
+	Parameter width bound to: 24 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-6157] synthesizing module 'FDE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3872]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3872]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (28#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (29#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'predeal_xlconvert' (30#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal_entity_declarations.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'predeal_struct' (31#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'predeal' (32#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/work/hdl/predeal.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'predeal_0' (33#1) [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/synth/predeal_0.v:57]
+WARNING: [Synth 8-3331] design synth_reg has unconnected port clr
+WARNING: [Synth 8-3331] design cast has unconnected port inp[26]
+WARNING: [Synth 8-3331] design cast has unconnected port inp[25]
+WARNING: [Synth 8-3331] design cast has unconnected port inp[24]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[17]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[16]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[15]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[14]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[13]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[12]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[11]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[10]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[9]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[8]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[7]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[6]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[5]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[4]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[3]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[2]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[1]
+WARNING: [Synth 8-3331] design trunc has unconnected port inp[0]
+WARNING: [Synth 8-3331] design delay__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized19 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design buff__parameterized0 has unconnected port RE
+WARNING: [Synth 8-3331] design buff__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized2 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design buff has unconnected port RE
+WARNING: [Synth 8-3331] design buff has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port CLK
+WARNING: [Synth 8-3331] design add_sub has unconnected port C_IN
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port CLK
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port POUT[casc][52]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port POUT[casc][51]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port POUT[casc][50]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port POUT[casc][49]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port POUT[casc][48]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port P_EN
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[9]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[8]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[7]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[6]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[5]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[4]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[3]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[2]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[1]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port OPCODE[0]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[30]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[29]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[28]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[27]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[26]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[25]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[24]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[23]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[22]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[21]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[20]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[19]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[18]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[17]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[16]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[15]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[14]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[13]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[12]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[11]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[10]
+WARNING: [Synth 8-3331] design addsub_mult_add__parameterized2 has unconnected port CIN[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 718.168 ; gain = 346.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 718.168 ; gain = 346.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 718.168 ; gain = 346.027
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1285 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/constrs/predeal.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/constrs/predeal.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/predeal_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/predeal_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 891.980 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 893.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 834 instances were transformed.
+  FDE => FDRE: 24 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 420 instances
+  MUXCY_L => MUXCY: 390 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 893.211 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.120 . Memory (MB): peak = 893.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 893.211 ; gain = 521.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 893.211 ; gain = 521.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 893.211 ; gain = 521.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 893.211 ; gain = 521.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (predeal_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module predeal.
+INFO: [Synth 8-3886] merging instance 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[42]' (FDRE) to 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[43]' (FDRE) to 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[44]' (FDRE) to 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[45]' (FDRE) to 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[46]' (FDRE) to 'inst/predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\predeal_struct/digital_fir_filter/predeal_fir_compiler_v7_2_i0_instance /U0/i_synth/\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 893.211 ; gain = 521.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 929.504 ; gain = 557.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 932.605 ; gain = 560.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |DSP48E1   |     1|
+|2     |DSP48E1_1 |    30|
+|3     |LUT1      |    60|
+|4     |LUT2      |    61|
+|5     |LUT3      |    25|
+|6     |LUT4      |   350|
+|7     |MUXCY_L   |   390|
+|8     |SRL16E    |   696|
+|9     |SRLC32E   |     1|
+|10    |XORCY     |   390|
+|11    |FDE       |    24|
+|12    |FDRE      |  1482|
+|13    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 356 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 947.801 ; gain = 400.617
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 947.801 ; gain = 575.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 835 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 947.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 144 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 120 instances
+  FDE => FDRE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 947.801 ; gain = 587.160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 947.801 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/predeal_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP predeal_0, cache-ID = 14d34a50f1e1f227
+INFO: [Coretcl 2-1174] Renamed 247 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 947.801 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.runs/predeal_0_synth_1/predeal_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file predeal_0_utilization_synth.rpt -pb predeal_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 18:12:24 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 26 10:15:26 2023
+# Process ID: 31412
+# Current directory: C:/Users/lenovo/Desktop/CICC/CICC/CICC.runs/I2S_fifo_synth_1
+# Command line: vivado.exe -log I2S_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2S_fifo.tcl
+# Log file: C:/Users/lenovo/Desktop/CICC/CICC/CICC.runs/I2S_fifo_synth_1/I2S_fifo.vds
+# Journal file: C:/Users/lenovo/Desktop/CICC/CICC/CICC.runs/I2S_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source I2S_fifo.tcl -notrace

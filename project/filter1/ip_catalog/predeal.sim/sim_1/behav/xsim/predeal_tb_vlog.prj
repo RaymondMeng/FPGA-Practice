@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl" --include "../../../../predeal.srcs/sim_1/imports/sysgen" --include "../../../../predeal.ip_user_files/ipstatic/work/hdl" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/synth_reg.v" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/convert_type.v" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/predeal_entity_declarations.v" \
+"../../../../predeal.ip_user_files/ipstatic/work/hdl/predeal.v" \
+"../../../../predeal.srcs/sources_1/ip/predeal_0/sim/predeal_0.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/convert_type.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/xlclockdriver_rd.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v" \
+"../../../../predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v" \
+"../../../../predeal.ip_user_files/bd/predeal_bd/ip/predeal_bd_predeal_1_0/sim/predeal_bd_predeal_1_0.v" \
+"../../../../predeal.ip_user_files/bd/predeal_bd/sim/predeal_bd.v" \
+"../../../../predeal.srcs/sources_1/imports/hdl/predeal_bd_wrapper.v" \
+"../../../../predeal.srcs/sources_1/imports/sysgen/predeal_mod.v" \
+"../../../../predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

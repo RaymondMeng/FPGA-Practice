@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/sim/predeal_fir_compiler_v7_2_i0.vhd" \
+
+nosort

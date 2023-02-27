@@ -1,0 +1,1 @@
+-wto "8f16dc5ac96446268a9c281106dad417" --incr --debug "typical" --relax --mt "2" -L "xbip_utils_v3_0_9" -L "axi_utils_v2_0_5" -L "fir_compiler_v7_2_11" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "predeal_tb_behav" "xil_defaultlib.predeal_tb" "xil_defaultlib.glbl" -log "elaborate.log" --timescale "1ns/10ps" 

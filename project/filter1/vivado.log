@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 27 18:07:25 2023
+# Process ID: 40628
+# Current directory: C:/Users/lenovo/Desktop/CICC/filter1
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/lenovo/Desktop/CICC/filter1/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/CICC/filter1\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'predeal_fir_compiler_v7_2_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'predeal_fir_compiler_v7_2_i0' to 'predeal_fir_compiler_v7_2_i0' is not allowed and is ignored.
+IP Repository Located at : C:/Xilinx/Vivado/2018.3/data/ip
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Adding File c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_fir_compiler_v7_2_i0/predeal_fir_compiler_v7_2_i0.xci
+Adding File C:/Users/lenovo/Desktop/CICC/filter1/sysgen/predeal.xdc
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog'.)
+0
+Wrote  : <C:\Users\lenovo\Desktop\CICC\filter1\ip_catalog\predeal.srcs\sources_1\bd\predeal_bd\predeal_bd.bd> 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /predeal_1/*'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /predeal_1/*'
+WARNING: [BD 41-927] Following properties on pin /predeal_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=predeal_bd_clk 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /predeal_1/*'
+Wrote  : <C:\Users\lenovo\Desktop\CICC\filter1\ip_catalog\predeal.srcs\sources_1\bd\predeal_bd\predeal_bd.bd> 
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 18:07:51 2023...

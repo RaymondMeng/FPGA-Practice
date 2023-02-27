@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 27 21:36:00 2023
+# Process ID: 21008
+# Current directory: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8136 C:\Users\lenovo\Desktop\CICC\filter1\ip_catalog\predeal.xpr
+# Log file: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/lenovo/Desktop/CICC/filter1/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/lenovo/Desktop/CICC/filter1/ip_catalog'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 819.160 ; gain = 139.605
+generate_target Simulation [get_files C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/predeal_bd.bd]
+INFO: [BD 41-1662] The design 'predeal_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/synth/predeal_bd.v
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/sim/predeal_bd.v
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hdl/predeal_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block predeal_1 .
+Exporting to file C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hw_handoff/predeal_bd.hwh
+Generated Block Design Tcl file C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hw_handoff/predeal_bd_bd.tcl
+Generated Hardware Definition File C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/synth/predeal_bd.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/predeal_bd.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/predeal_bd.bd] -directory C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files -ipstatic_source_dir C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'predeal_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/synth/predeal_bd.v
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/sim/predeal_bd.v
+VHDL Output written to : C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hdl/predeal_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block predeal_1 .
+Exporting to file C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hw_handoff/predeal_bd.hwh
+Generated Block Design Tcl file C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/hw_handoff/predeal_bd_bd.tcl
+Generated Hardware Definition File C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/synth/predeal_bd.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/predeal_bd.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'predeal_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_fir_compiler_v7_2_i0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_fir_compiler_v7_2_i0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_gateway_in.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_gateway_out.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_gateway_in.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim/predeal_gateway_out.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj predeal_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/synth_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srlc33e
+INFO: [VRFC 10-311] analyzing module synth_reg
+INFO: [VRFC 10-311] analyzing module synth_reg_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synth_reg_w_init
+INFO: [VRFC 10-311] analyzing module single_reg_w_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/convert_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cast
+INFO: [VRFC 10-311] analyzing module shift_division_result
+INFO: [VRFC 10-311] analyzing module shift_op
+INFO: [VRFC 10-311] analyzing module pad_lsb
+INFO: [VRFC 10-311] analyzing module zero_ext
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-311] analyzing module extend_msb
+INFO: [VRFC 10-311] analyzing module align_input
+INFO: [VRFC 10-311] analyzing module round_towards_inf
+INFO: [VRFC 10-311] analyzing module round_towards_even
+INFO: [VRFC 10-311] analyzing module trunc
+INFO: [VRFC 10-311] analyzing module saturation_arith
+INFO: [VRFC 10-311] analyzing module wrap_arith
+INFO: [VRFC 10-311] analyzing module convert_type
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclockdriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/predeal_entity_declarations.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_xlconvert
+INFO: [VRFC 10-311] analyzing module xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/predeal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_struct
+INFO: [VRFC 10-311] analyzing module predeal_default_clock_driver
+INFO: [VRFC 10-311] analyzing module predeal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/sim/predeal_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srlc33e
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'srlc33e' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:60]
+INFO: [VRFC 10-311] analyzing module synth_reg
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:94]
+INFO: [VRFC 10-311] analyzing module synth_reg_reg
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg_reg' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:135]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synth_reg_w_init
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg_w_init' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v:3]
+INFO: [VRFC 10-311] analyzing module single_reg_w_init
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'single_reg_w_init' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v:45]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/convert_type.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/xlclockdriver_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclockdriver
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'xlclockdriver' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/xlclockdriver_rd.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_xlconvert
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_xlconvert' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v:41]
+INFO: [VRFC 10-311] analyzing module xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v:109]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_struct
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_struct' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:7]
+INFO: [VRFC 10-311] analyzing module predeal_default_clock_driver
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_default_clock_driver' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:53]
+INFO: [VRFC 10-311] analyzing module predeal
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:75]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/bd/predeal_bd/ip/predeal_bd_predeal_1_0/sim/predeal_bd_predeal_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd_predeal_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/bd/predeal_bd/sim/predeal_bd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/imports/hdl/predeal_bd_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/imports/sysgen/predeal_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_stub
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclk
+INFO: [VRFC 10-311] analyzing module xltbsource
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v:128]
+INFO: [VRFC 10-311] analyzing module xltbsink
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v:207]
+INFO: [VRFC 10-311] analyzing module predeal_tb
+"xvhdl --incr --relax -prj predeal_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1000.461 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8f16dc5ac96446268a9c281106dad417 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L fir_compiler_v7_2_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot predeal_tb_behav xil_defaultlib.predeal_tb xil_defaultlib.glbl -log elaborate.log --timescale 1ns/10ps 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package fir_compiler_v7_2_11.fir_compiler_v7_2_11_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_11.globals_pkg
+Compiling package fir_compiler_v7_2_11.components
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.xlclk(clk_period=20)
+Compiling module xil_defaultlib.xltbsource(o_width=24,o_bin_pt=2...
+Compiling module xil_defaultlib.xltbsink(i_width=24,i_bin_pt=22,...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.single_reg_w_init(width=1,init_v...
+Compiling module xil_defaultlib.synth_reg_w_init(width=1,init_va...
+Compiling module xil_defaultlib.xlclockdriver(period=1)
+Compiling module xil_defaultlib.predeal_default_clock_driver
+Compiling architecture synth of entity fir_compiler_v7_2_11.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=14,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=13,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=12,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=11,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=10,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=9,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=8,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=5,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=4,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdrse_v of entity unisim.FDRSE [fdrse_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture structural of entity fir_compiler_v7_2_11.add_sub [\add_sub(c_xdevicefamily="zynq",...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.calc [\calc(c_xdevicefamily="zynq",c_p...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Compiling architecture synth of entity fir_compiler_v7_2_11.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Compiling architecture synth of entity fir_compiler_v7_2_11.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Compiling architecture synth of entity fir_compiler_v7_2_11.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=21,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.add_accum [\add_accum(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.ext_mult [\ext_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.single_rate [\single_rate(c_xdevicefamily="zy...]
+Compiling architecture synth of entity fir_compiler_v7_2_11.fir_compiler_v7_2_11_viv [\fir_compiler_v7_2_11_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_11.fir_compiler_v7_2_11 [\fir_compiler_v7_2_11(c_xdevicef...]
+Compiling architecture predeal_fir_compiler_v7_2_i0_arch of entity xil_defaultlib.predeal_fir_compiler_v7_2_i0 [predeal_fir_compiler_v7_2_i0_def...]
+Compiling module xil_defaultlib.xlpredeal_fir_compiler_v7_2_i0_3...
+Compiling module xil_defaultlib.cast(old_width=43,old_bin_pt=40,...
+Compiling module xil_defaultlib.sign_ext(old_width=27,new_width=...
+Compiling module xil_defaultlib.extend_msb(old_width=27,new_widt...
+Compiling module xil_defaultlib.trunc(old_width=45,old_bin_pt=40...
+Compiling module xil_defaultlib.cast(old_width=27,old_bin_pt=22,...
+Compiling module xil_defaultlib.wrap_arith(old_width=27,old_bin_...
+Compiling module xil_defaultlib.convert_type(old_width=43,old_bi...
+Compiling module unisims_ver.FDE
+Compiling module xil_defaultlib.srlc33e(width=24,latency=1)
+Compiling module xil_defaultlib.synth_reg(width=24)
+Compiling module xil_defaultlib.predeal_xlconvert(din_width=43,d...
+Compiling module xil_defaultlib.predeal_struct
+Compiling module xil_defaultlib.predeal
+Compiling module xil_defaultlib.predeal_bd_predeal_1_0
+Compiling module xil_defaultlib.predeal_bd
+Compiling module xil_defaultlib.predeal_bd_wrapper
+Compiling module xil_defaultlib.predeal_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot predeal_tb_behav
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:07:20 . Memory (MB): peak = 1000.461 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '440' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "predeal_tb_behav -key {Behavioral:sim_1:Functional:predeal_tb} -tclbatch {predeal_tb.tcl} -protoinst "protoinst_files/predeal_bd.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/predeal_bd.protoinst
+Time resolution is 1 ps
+source predeal_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 6400220.00000000 ns
+  
+Beginning comparisons for instance predeal_gateway_out.dat
+run: Time (s): cpu = 00:00:28 ; elapsed = 00:14:28 . Memory (MB): peak = 1047.680 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:33 ; elapsed = 00:14:31 . Memory (MB): peak = 1047.680 ; gain = 47.219
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'predeal_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 6400220.00000000 ns
+launch_simulation: Time (s): cpu = 00:00:43 ; elapsed = 00:21:59 . Memory (MB): peak = 1047.680 ; gain = 118.703
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 22:07:35 2023...

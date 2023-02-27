@@ -1,0 +1,19 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/conv_pkg.v,1677402394,verilog,,,,,,,,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/convert_type.v,1677402394,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/conv_pkg.v,align_input;cast;convert_type;extend_msb;pad_lsb;round_towards_even;round_towards_inf;saturation_arith;shift_division_result;shift_op;sign_ext;trunc;wrap_arith;zero_ext,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/predeal.v,1677402395,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/ip/predeal_0/sim/predeal_0.v,,predeal;predeal_default_clock_driver;predeal_struct,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/predeal_entity_declarations.v,1677402395,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/predeal.v,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/conv_pkg.v,predeal_xlconvert;xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/synth_reg.v,1677402394,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v,,srlc33e;synth_reg;synth_reg_reg,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v,1677402394,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/convert_type.v,,single_reg_w_init;synth_reg_w_init,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v,1677402395,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/predeal_entity_declarations.v,,xlclockdriver,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sim_1/new/top_tb.v,1677490051,verilog,,,,top_tb,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/ip/I2S_fifo/sim/I2S_fifo.v,1677377721,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.ip_user_files/ipstatic/work/hdl/synth_reg.v,,I2S_fifo,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/sim/predeal_fir_compiler_v7_2_i0.vhd,1677402392,vhdl,,,,predeal_fir_compiler_v7_2_i0,,,,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/ip/predeal_0/sim/predeal_0.v,1677402389,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/microphone.v,,predeal_0,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/microphone.v,1677467183,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/sound_out.v,,microphone,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/sound_out.v,1677479238,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/top.v,,sound_out,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,
+C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sources_1/new/top.v,1677485955,verilog,,C:/Users/lenovo/Desktop/CICC/CICC/CICC.srcs/sim_1/new/top_tb.v,,top,,,../../../../CICC.ip_user_files/ipstatic/work/hdl,,,,,

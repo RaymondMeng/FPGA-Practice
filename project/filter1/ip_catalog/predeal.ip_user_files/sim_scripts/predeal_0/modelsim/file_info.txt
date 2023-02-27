@@ -1,0 +1,12 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_9,../../../ipstatic/ip/predeal_0/predeal_fir_compiler_v7_2_i0/hdl/xbip_utils_v3_0_vh_rfs.vhd,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+axi_utils_v2_0_vh_rfs.vhd,vhdl,axi_utils_v2_0_5,../../../ipstatic/ip/predeal_0/predeal_fir_compiler_v7_2_i0/hdl/axi_utils_v2_0_vh_rfs.vhd,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+fir_compiler_v7_2_vh_rfs.vhd,vhdl,fir_compiler_v7_2_11,../../../ipstatic/ip/predeal_0/predeal_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+predeal_fir_compiler_v7_2_i0.vhd,vhdl,xil_defaultlib,../../../../predeal.srcs/sources_1/ip/predeal_0/predeal_fir_compiler_v7_2_i0/sim/predeal_fir_compiler_v7_2_i0.vhd,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+synth_reg.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/synth_reg.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+synth_reg_w_init.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/synth_reg_w_init.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+convert_type.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/convert_type.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+xlclockdriver_rd.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/xlclockdriver_rd.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+predeal_entity_declarations.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/predeal_entity_declarations.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+predeal.v,verilog,xil_defaultlib,../../../ipstatic/work/hdl/predeal.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+predeal_0.v,verilog,xil_defaultlib,../../../../predeal.srcs/sources_1/ip/predeal_0/sim/predeal_0.v,incdir="../../../ipstatic/work/hdl"incdir="../../../ipstatic/work/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

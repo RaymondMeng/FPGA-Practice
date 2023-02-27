@@ -1,0 +1,76 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/synth_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srlc33e
+INFO: [VRFC 10-311] analyzing module synth_reg
+INFO: [VRFC 10-311] analyzing module synth_reg_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synth_reg_w_init
+INFO: [VRFC 10-311] analyzing module single_reg_w_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/convert_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cast
+INFO: [VRFC 10-311] analyzing module shift_division_result
+INFO: [VRFC 10-311] analyzing module shift_op
+INFO: [VRFC 10-311] analyzing module pad_lsb
+INFO: [VRFC 10-311] analyzing module zero_ext
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-311] analyzing module extend_msb
+INFO: [VRFC 10-311] analyzing module align_input
+INFO: [VRFC 10-311] analyzing module round_towards_inf
+INFO: [VRFC 10-311] analyzing module round_towards_even
+INFO: [VRFC 10-311] analyzing module trunc
+INFO: [VRFC 10-311] analyzing module saturation_arith
+INFO: [VRFC 10-311] analyzing module wrap_arith
+INFO: [VRFC 10-311] analyzing module convert_type
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclockdriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/predeal_entity_declarations.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_xlconvert
+INFO: [VRFC 10-311] analyzing module xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/ipstatic/work/hdl/predeal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_struct
+INFO: [VRFC 10-311] analyzing module predeal_default_clock_driver
+INFO: [VRFC 10-311] analyzing module predeal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/ip/predeal_0/sim/predeal_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srlc33e
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'srlc33e' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:60]
+INFO: [VRFC 10-311] analyzing module synth_reg
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:94]
+INFO: [VRFC 10-311] analyzing module synth_reg_reg
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg_reg' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg.v:135]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synth_reg_w_init
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'synth_reg_w_init' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v:3]
+INFO: [VRFC 10-311] analyzing module single_reg_w_init
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'single_reg_w_init' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/synth_reg_w_init.v:45]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/convert_type.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/xlclockdriver_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclockdriver
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'xlclockdriver' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/xlclockdriver_rd.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_xlconvert
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_xlconvert' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v:41]
+INFO: [VRFC 10-311] analyzing module xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'xlpredeal_fir_compiler_v7_2_i0_375bcf09c69998f49a8e31d46327de04' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal_entity_declarations.v:109]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_struct
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_struct' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:7]
+INFO: [VRFC 10-311] analyzing module predeal_default_clock_driver
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal_default_clock_driver' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:53]
+INFO: [VRFC 10-311] analyzing module predeal
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'predeal' [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/bd/predeal_bd/ipshared/2d3f/hdl/predeal.v:75]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/bd/predeal_bd/ip/predeal_bd_predeal_1_0/sim/predeal_bd_predeal_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd_predeal_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.ip_user_files/bd/predeal_bd/sim/predeal_bd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/imports/hdl/predeal_bd_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sources_1/imports/sysgen/predeal_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predeal_stub
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclk
+INFO: [VRFC 10-311] analyzing module xltbsource
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v:128]
+INFO: [VRFC 10-311] analyzing module xltbsink
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/lenovo/Desktop/CICC/filter1/ip_catalog/predeal.srcs/sim_1/imports/sysgen/predeal_tb_mod.v:207]
+INFO: [VRFC 10-311] analyzing module predeal_tb
